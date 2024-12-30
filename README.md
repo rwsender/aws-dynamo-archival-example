@@ -1,14 +1,11 @@
-# Welcome to your CDK TypeScript project
+# DynamoDB Archival Example
 
-This is a blank project for CDK development with TypeScript.
+This is an example project based on [this AWS blog](https://aws.amazon.com/blogs/database/archive-data-from-amazon-dynamodb-to-amazon-s3-using-ttl-and-amazon-kinesis-integration/ "AWS Blog") that demonstrates how to archive data from Amazon DynamoDB to Amazon S3 using Time to Live (TTL) and Amazon Kinesis Data Streams.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+You will need to have Docker running as the Lambda functions require it to build the dependencies.
 
 ## Useful commands
 
 * `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
 * `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
 * `npx cdk synth`   emits the synthesized CloudFormation template
